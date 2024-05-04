@@ -48,7 +48,16 @@ session_start();
             <img src="images/algoicon.png" class="d-inline-block align-top img-fluid" alt="" loading="lazy">
          </div>
          <div class="icon-text">
-         <h1>Welcome, <?php echo $_SESSION['username']; ?>!</h1>
+         <h1>Welcome, <?php 
+         $name = $_SESSION['username'];
+         if(empty($name)){
+            echo " to my Website";
+         }else{
+             echo $name;
+         }
+         
+         
+         ?>!</h1>
             <h3>Algorithm Visualization</h3>
             <p><i class="fa fa-quote-left"></i>&nbsp;Understand the Sorting concept by visualizing it&nbsp;better&nbsp;<i class="fa fa-quote-right"></i></p>
             <a type="button" class="btn custom-btn" href="#sorting">Start&nbsp;&nbsp;<i class="fa fa-chevron-circle-down"></i> </a>
