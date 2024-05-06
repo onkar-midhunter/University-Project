@@ -1,4 +1,4 @@
-var amt1=20, speed1=37.55;
+var amt1=20, speed1=18.55;
 let bubbleArray = []
 var loop1;
 

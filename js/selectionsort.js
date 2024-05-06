@@ -1,4 +1,4 @@
-var amt2=20, speed2=37.55;
+var amt2=20, speed2=18.55;
 let selectArray = []
 var loop2;
 

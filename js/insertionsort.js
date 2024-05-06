@@ -1,4 +1,4 @@
-var amt3=20, speed3=37.55;
+var amt3=20, speed3=18.55;
 let insertArray = []
 var loop3;
 

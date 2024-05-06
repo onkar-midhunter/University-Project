@@ -1,4 +1,4 @@
-var amt4=20, speed4=37.55;
+var amt4=20, speed4=18.55;
 let quickArray = []
 var loop4;
 var quickcount = 0
