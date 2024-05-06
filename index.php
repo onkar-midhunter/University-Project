@@ -49,12 +49,11 @@ session_start();
          </div>
          <div class="icon-text">
          <h1>Welcome, <?php 
-         $name = $_SESSION['username'];
-         if(empty($name)){
-            echo " to my Website";
-         }else{
-             echo $name;
-         }
+          if(isset($_SESSION['username'])){
+            echo $_SESSION['username'];
+          }else{
+            echo "to my website";
+          }
          
          
          ?>!</h1>

@@ -48,7 +48,7 @@ mysqli_close($conn);
     <style>
           body {
             font-family: Arial, sans-serif;
-            background-color: blackls; /* Add your image path here */
+            background-color: black; /* Add your image path here */
             background-size: cover;
             margin: 0;
             padding: 0;
