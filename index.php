@@ -34,7 +34,8 @@ session_start();
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
          <div class="navbar-nav ml-auto">
             <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link active" href="backend/Register.php">login/Register</a>
+            <a class="nav-link active" href="backend/Register.php">Sign up</a>
+            <a class="nav-link active" href="backend/login.php">Sign in</a>
             <a class="nav-link" href="#sorting">Sorting</a>
             <a class="nav-link" href="#codes">Code </a>
             <a class="nav-link " href="#footer">Contact</a>
