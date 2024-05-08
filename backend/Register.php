@@ -1,43 +1,4 @@
-<?php
-include("database.php");
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_SPECIAL_CHARS);
-    $course = filter_input(INPUT_POST, "course", FILTER_SANITIZE_SPECIAL_CHARS);
-    $username = $_POST["username"];
-    $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
-    $gend = $_POST["gender"];
-    $gender = filter_var($gend, FILTER_SANITIZE_STRING);
-
-    if (empty($name)) {
-        echo "enter a name";
-    } elseif (empty($course)) {
-        echo "enter a course Name";
-    } elseif (empty($username)) {
-        echo "enter a valid username";
-    } elseif (empty($password)) {
-        echo "enter a password";
-    } elseif (empty($gender)) {
-        echo "select a valid gender";
-    } else {
-        $hash = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO register(Name,courseName,userName,password,gender)
-                VALUES('$name','$course','$username','$hash','$gender')";
-        try {
-            mysqli_query($conn, $sql);
-        } catch (mysqli_sql_exception $e) {
-            // Handle exception
-            echo "Error: " . $e->getMessage();
-        }
-        
-        // Redirect to login page
-        header("Location: login.php");
-        exit(); // Ensure script execution stops after redirection
-    }
-}
-
-mysqli_close($conn);
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -118,3 +79,43 @@ mysqli_close($conn);
     </form>
 </body>
 </html>
+<?php
+include("database.php");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_SPECIAL_CHARS);
+    $course = filter_input(INPUT_POST, "course", FILTER_SANITIZE_SPECIAL_CHARS);
+    $username = $_POST["username"];
+    $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
+    $gend = $_POST["gender"];
+    $gender = filter_var($gend, FILTER_SANITIZE_STRING);
+
+    if (empty($name)) {
+        echo "enter a name";
+    } elseif (empty($course)) {
+        echo "enter a course Name";
+    } elseif (empty($username)) {
+        echo "enter a valid username";
+    } elseif (empty($password)) {
+        echo "enter a password";
+    } elseif (empty($gender)) {
+        echo "select a valid gender";
+    } else {
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+        $sql = "INSERT INTO register(Name,courseName,userName,password,gender)
+                VALUES('$name','$course','$username','$hash','$gender')";
+        try {
+            mysqli_query($conn, $sql);
+        } catch (mysqli_sql_exception $e) {
+            // Handle exception
+            echo "Error: " . $e->getMessage();
+        }
+        
+        // Redirect to login page
+        header("Location: login.php");
+        exit(); // Ensure script execution stops after redirection
+    }
+}
+
+mysqli_close($conn);
+?>
