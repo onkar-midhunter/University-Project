@@ -333,10 +333,10 @@ session_start();
          </div>
          <div class='footer-link-items'>
             <h2>Get Social</h2>
-            <a href="https://www.instagram.com/san_deep_10/"  target="_blank">Instagram</a>
-            <a href="https://github.com/sandeep-shaw10"  target="_blank">Github</a>
-            <a href="https://www.youtube.com/channel/UCnzoz-Snqs689f1YLqi--zg?view_as=subscriber"  target="_blank">Youtube</a>
-            <a href="https://www.linkedin.com/in/sandeep-shaw-b47b47158/"  target="_blank">LinkedIn</a>
+            <a href="#"  target="_blank">Instagram</a>
+            <a href="https://github.com/onkar-midhunter/University-Project"  target="_blank">Github</a>
+            <a href="#"  target="_blank">Youtube</a>
+            <a href="#"  target="_blank">LinkedIn</a>
          </div>
       </div>
       </div>
@@ -350,19 +350,19 @@ session_start();
          </div>
          <small class='website-rights'>SORTING VISUALIZER © 2024</small>
          <div class='social-icons'>
-            <!-- <a class='social-icon-link' href="https://github.com/sandeep-shaw10" target='_blank' aria-label='Facebook'>
+            <a class='social-icon-link' href="https://github.com/onkar-midhunter/University-Project" target='_blank' aria-label='Facebook'>
                <i class="fa fa-github"></i>
-            </a> -->
-            <a class='social-icon-link' href="https://www.instagram.com/san_deep_10/" target='_blank' aria-label='Instagram' >
+            </a>
+            <a class='social-icon-link' href="#" target='_blank' aria-label='Instagram' >
                <i class="fa fa-instagram"></i>
             </a>
-            <!-- <a class='social-icon-link' href='https://www.youtube.com/channel/UCnzoz-Snqs689f1YLqi--zg?view_as=subscriber' target='_blank' aria-label='Youtube'>
+            <a class='social-icon-link' href='#' target='_blank' aria-label='Youtube'>
                <i class="fa fa-youtube-play"></i>
-            </a> -->
-            <a class='social-icon-link' href="https://www.yourquote.in/sandeep-shaw-b09xt/quotes" target='_blank' aria-label='Twitter'>
+            </a>
+            <a class='social-icon-link' href="#" target='_blank' aria-label='Twitter'>
                <i class="fa fa-quote-left"></i>
             </a>
-            <a class='social-icon-link' href="https://www.linkedin.com/in/sandeep-shaw-b47b47158/" target='_blank' aria-label='LinkedIn' >
+            <a class='social-icon-link' href="#" target='_blank' aria-label='LinkedIn' >
                <i class="fa fa-linkedin-square"></i>
             </a>
          </div>
@@ -396,7 +396,7 @@ session_start();
          <h4>Sorry, this service is Unavailable</h4>
          <img class="img-fluid mx-auto" src="images/Service.png">
          <p>Want to encourage the Developer ?</p>
-         <a class="btn btn-outline-danger" href="https://github.com/sandeep-shaw10/Algorithm_App" target="_blank">Click Here</a>
+         <a class="btn btn-outline-danger" href="https://github.com/onkar-midhunter/University-Project" target="_blank">Click Here</a>
       </div>
    </div>
    </body>
